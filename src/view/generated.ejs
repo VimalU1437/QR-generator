@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qr code</title>
+    <style>
+        svg{
+            height: 200px;
+            width: 200px;
+            margin: 30px  ;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="canvas">
+
+        <form
+        style="background-color: lightcoral; text-align: center;"
+        method="post"
+        action="/"
+        >
+        <h1>Enter your input</h1>
+        <input type="text" placeholder="Enter text here" name="text" />
+        <button>Generate</button>
+    </form>
+    <div 
+    style="background-color: lightgray;"
+    >
+    <div style="margin: 30px auto;height: 200px;width: 200px;">
+        <%-qr%>
+    </div>
+      <p style="text-align: center; padding: 10px;"><%= text %></p>
+
+    </div>
+</div>
+</body>
+</html>
